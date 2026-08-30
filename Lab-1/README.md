@@ -1,161 +1,113 @@
-# Python Lab 2
+# Lab 1 - Python Basics
 
-## Program 1: Armstrong Number
+## 1. Variable Practice
 
 ### Aim
-To check whether a number is an Armstrong number and display Armstrong numbers within a given range.
+To declare variables and display their values and data types.
 
 ### Logic
-The number of digits is calculated first. Each digit is raised to the power of the number of digits and all the values are added. If the sum is equal to the original number, it is an Armstrong number.
-
-### Sample Input
-153
+Create variables for name, age, height, and student status. Use `type()` to display their data types.
 
 ### Sample Output
-153 is an Armstrong number.
+```text
+Name: Vedika | Type: <class 'str'>
+Age: 20 | Type: <class 'int'>
+Height: 5.3 | Type: <class 'float'>
+Student: True | Type: <class 'bool'>
 
 ---
 
-## Program 2: Prime Number
+## 2. Greeting Program
 
 ### Aim
-To check whether a number is prime and display prime numbers up to a given limit.
+To take name, age, and city as input and display a greeting using an f-string.
 
 ### Logic
-A number is prime if it has no divisor other than 1 and itself. Divisors are checked only up to the square root of the number.
-
-### Sample Input
-29
+Take the user's name, age, and city as input and combine them using an f-string.
 
 ### Sample Output
-29 is a prime number.
+```text
+Enter your name: Vedika
+Enter your age: 20
+Enter your city: Indore
+Hello Vedika! You are 20 years old and you live in Indore.
 
 ---
 
-## Program 3: Perfect Number
+## 3. Arithmetic Operations
 
 ### Aim
-To check whether a number is a perfect number and display perfect numbers up to a given limit.
+To perform basic arithmetic operations on two numbers.
 
 ### Logic
-The proper divisors of the number are added. If their sum is equal to the original number, the number is perfect.
-
-### Sample Input
-6
+Take two numbers as input and calculate sum, difference, product, quotient, and remainder.
 
 ### Sample Output
-6 is a perfect number.
+```text
+Enter first number: 10
+Enter second number: 3
+Sum: 13
+Difference: 7
+Product: 30
+Quotient: 3.3333333333333335
+Remainder: 1
 
 ---
 
-## Program 4: Palindrome
+## 4. Celsius to Fahrenheit
 
 ### Aim
-To check whether a number or string is a palindrome using arithmetic and string methods.
+To convert Celsius temperature into Fahrenheit.
 
 ### Logic
-In the arithmetic method, the number is reversed using remainder and integer division. In the string method, the string is compared with its reverse.
-
-### Sample Input
-121
+Use the formula: F = (C × 9/5) + 32.
 
 ### Sample Output
-Arithmetic method: Palindrome
+```text
+Enter temperature in Celsius: 25
+Temperature in Fahrenheit: 77.0
 
 ---
 
-## Program 5: Fibonacci
+## 5. String Manipulation
 
 ### Aim
-To generate the Fibonacci series using iteration and recursion.
+To perform different string operations on a full name.
 
 ### Logic
-The iterative method uses a loop to generate the series. The recursive method calls itself to calculate Fibonacci numbers.
-
-### Sample Input
-10
+Use string methods such as strip(), upper(), lower(), and title(). Reverse the string and find its length.
 
 ### Sample Output
-0 1 1 2 3 5 8 13 21 34
+```text
+Enter your full name: Vedika Sawarkar
+Uppercase: VEDIKA SAWARKAR
+Lowercase: vedika sawarkar
+Title Case: Vedika Sawarkar
+Reversed: rakrawaS akideV
+Length: 15
 
 ---
 
-## Program 6: Pattern Printing
+## 6. Escape Sequence
 
 ### Aim
-To print different patterns using nested loops.
+To demonstrate the use of escape sequences in Python.
 
 ### Logic
-Nested loops are used to control the number of rows, spaces and characters printed in each row.
-
-### Sample Input
-4
+Use \t for tab spacing and \n for a new line.
 
 ### Sample Output
-Patterns are printed for 4 rows.
+```text
+================================
+            RECEIPT
+================================
+Item            Price
+-------------------------------
+Notebook        80
+Pen             20
+Pencil          10
+-------------------------------
+Total           110
 
----
 
-## Program 7: Menu-Driven Application
 
-### Aim
-To combine programs 1 to 6 into a single menu-driven application.
-
-### Logic
-A menu is displayed using a loop. The user's choice determines which program is executed. The menu continues until the user selects Exit.
-
-### Sample Input
-1
-
-### Sample Output
-The selected program is executed.
-
----
-
-## Program 8: Number Guessing Game
-
-### Aim
-To create a number guessing game where the user guesses a randomly generated number between 1 and 100.
-
-### Logic
-The computer generates a random number. The user gets a maximum of 7 attempts. After every guess, the program indicates whether the guess is too high or too low.
-
-### Sample Input
-50
-
-### Sample Output
-Too high! / Too low! / Correct!
-
----
-
-# Analysis
-
-## 1. For loop vs While loop
-
-A `for` loop is generally more suitable when the number of iterations is known, such as printing a fixed number of Fibonacci terms or checking a range.
-
-A `while` loop is useful when the number of iterations depends on a condition, such as reversing the digits of a number.
-
-## 2. Fibonacci: Iteration vs Recursion
-
-The iterative approach is more efficient because it calculates the Fibonacci series using a single loop.
-
-The recursive approach makes many repeated function calls because the same Fibonacci values may be calculated multiple times. Therefore, recursion requires more function calls and computational work for larger values of `n`.
-
-## 3. Why is checking up to √n enough for Prime Number?
-
-If a number `n` has a factor greater than √n, it must have another factor smaller than √n.
-
-For example, if:
-
-n = a × b
-
-then at least one of `a` or `b` must be less than or equal to √n.
-
-Therefore, checking divisors only up to √n is sufficient to determine whether a number is prime.
-
-## 4. Strategy for minimum guesses in the guessing game
-
-Binary search is an efficient strategy when the possible numbers are ordered. After every guess, approximately half of the remaining range can be eliminated.
-
-For a range from 1 to 100, this strategy can find the number in at most about 7 guesses.
