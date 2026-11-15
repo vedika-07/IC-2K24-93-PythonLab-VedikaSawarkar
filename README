@@ -1,0 +1,125 @@
+# Python Lab
+
+This repository contains Python programs completed as part of the Python Lab session.
+
+## Repository Information
+
+- Student Name: Vedika Sawarkar
+- Roll Number: IC-2K24-93
+- Lab: Python Lab
+
+## Lab 1
+
+Lab 1 contains basic Python programs covering variables, input/output, arithmetic operations, strings, escape sequences, and a menu-driven calculator.
+
+### Programs Included
+
+1. Variable and Identifier Practice
+2. Greeting Program
+3. Arithmetic Operations
+4. Celsius to Fahrenheit
+5. String Manipulation
+6. Escape Sequence Practice
+7. Menu Driven Calculator
+
+## Lab 2
+
+Lab 2 contains Python programs based on functions, loops, recursion, nested loops, user-defined modules, input validation, and the random module.
+
+### Programs Included
+
+1. Armstrong Number
+2. Prime Number
+3. Perfect Number
+4. Palindrome
+5. Fibonacci Series
+6. Pattern Printing
+7. Menu-Driven Application
+8. Number Guessing Game
+
+## Lab 3 - Pattern Printing
+
+This folder contains Python programs for different star and number patterns.
+
+### Programs Included
+
+1. Inverted Triangle Pattern
+2. Square Triangle Pattern
+3. Pyramid Pattern
+4. Diamond Pattern
+5. Number Pattern
+
+## Lab 4 - Pattern Printing
+
+This folder contains Python programs for different star and number patterns.
+
+### Programs Included
+
+1. Butterfly Pattern
+2. Hollow Triangle
+
+## Lab 5 - Matrix Operations
+
+This folder contains Python programs for matrix operations.
+
+### Programs Included
+
+1. Display Matrix
+2. Sum of All Elements
+3. Sum of Main Diagonal
+4. Largest and Smallest Element
+5. Transpose of Matrix
+6. Star Pattern
+
+## Lab 7 - Combination Programs
+
+### Programs Included
+
+1. ATM Simulation
+2. Grade Calculator
+3. Reverse Guessing
+4. Guessing Game with Hints
+5. Combined Application
+
+## Lab 8 - Time and Space Complexity
+
+This folder contains a Markdown file explaining the concepts of Time Complexity and Space Complexity.
+
+## Folder Structure
+
+All lab programs and documentation are organized into separate folders.
+
+```text
+PythonLab-VedikaSawarkar/
+│
+├── Lab1/
+│   ├── README.md
+│   └── Python Programs
+│
+├── Lab2/
+│   ├── README.md
+│   └── Python Programs
+│
+├── Lab3/
+│   ├── README.md
+│   └── Python Programs
+│
+├── Lab4/
+│   ├── README.md
+│   └── Python Programs
+│
+├── Lab5/
+│   ├── README.md
+│   └── Python Programs
+│
+├── Lab7/
+│   ├── README.md
+│   └── Python Programs
+│
+├── Lab8/
+│   └── time_space_complexity.md
+│
+├── .gitignore
+└── README.md
+```
+
